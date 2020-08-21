@@ -1,4 +1,8 @@
 package com.example.uibestpractice;
 
-public class A {//1112222
+<<<<<<< HEAD
+public class A {//111
+=======
+public class A {//111
+>>>>>>> feature1
 }
