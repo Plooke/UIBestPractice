@@ -1,6 +1,11 @@
 package com.example.uibestpractice;
 
 
-public class A { //324235
-     //weqrweq
+<<<<<<< HEAD
+public class A { //3242351231
+     //a
+=======
+public class A { //3242351231
+
+>>>>>>> issue
 }
