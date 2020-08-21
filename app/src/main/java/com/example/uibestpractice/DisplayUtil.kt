@@ -8,7 +8,7 @@ import android.util.DisplayMetrics
 
 object DisplayUtil {
     fun getScreenWidth(context: Context): Int {
-        val dm: DisplayMetrics = context.getResources().getDisplayMetrics().also {  }
+        val dm: DisplayMetrics = context.getResources().getDisplayMetrics()
         return dm.widthPixels
     }
 }
