@@ -21,7 +21,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Type something here"
-            android:maxLines="2" />
+            android:scrollbars="vertical"
+
+            android:scrollbarThumbVertical="@drawable/scroll_vertical"
+            android:maxLines="7" />
 
 
         <Button

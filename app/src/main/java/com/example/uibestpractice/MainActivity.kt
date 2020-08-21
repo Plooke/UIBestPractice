@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             if (isShouldHideInput(v, ev!!)) {//点击的是其他区域，则调用系统方法隐藏软键盘
                 val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
                 if (imm != null) {
-                    imm!!.hideSoftInputFromWindow(v!!.windowToken, 0)
+                    imm.hideSoftInputFromWindow(v!!.windowToken, 0)
                 }
             }
             return super.dispatchTouchEvent(ev)
@@ -92,10 +92,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 R.id.inputText -> {
                     val leftTop = intArrayOf(0, 0)
                     //获取输入框当前的location位置
-                    v!!.getLocationInWindow(leftTop)
+                    v.getLocationInWindow(leftTop)
                     val left = leftTop[0]
                     val top = leftTop[1]
-                    val bottom = top + v!!.getHeight()
+                    val bottom = top + v.getHeight()
                     val right = DisplayUtil.getScreenWidth(this)
                     return if (event.x > left && event.x < right
                         && event.y > top && event.y < bottom) {
