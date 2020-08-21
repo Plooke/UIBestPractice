@@ -10,5 +10,6 @@ object DisplayUtil {
     fun getScreenWidth(context: Context): Int {
         val dm: DisplayMetrics = context.getResources().getDisplayMetrics()
         return dm.widthPixels
+        //111
     }
 }
